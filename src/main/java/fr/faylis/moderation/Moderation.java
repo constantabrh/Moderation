@@ -57,9 +57,8 @@ public final class Moderation extends JavaPlugin {
             getLogger().info("§aInventory data folder created");
         }
         // Load utils
-        load();
-
         FileManager.createFiles();
+        load();
         /* Load commands */
         // Moderation mode command
         this.getCommand("moderation").setExecutor(new ModerationCommand());
@@ -89,7 +88,6 @@ public final class Moderation extends JavaPlugin {
 
     private void load(){
         playersList = new HashMap<>();
-        stringList = new StringList();
         modsList = new ArrayList<>();
         vanishList = new ArrayList<>();
         frozenList = new ArrayList<>();

@@ -1,6 +1,7 @@
 package fr.faylis.moderation.managers;
 
 import fr.faylis.moderation.Moderation;
+import fr.faylis.moderation.utils.StringList;
 import me.devtec.theapi.configapi.Config;
 
 import java.util.Arrays;
@@ -26,11 +27,23 @@ public class FileManager {
     public static void createFiles(){
         try {
             loadConfig();
-            Config lang = Config.loadConfig(Moderation.getInstance(),"lang.yml", "Moderation/lang.yml");
+            loadLang();
+
+            Moderation.getInstance().stringList = new StringList();
         } catch (Exception exception){
             Moderation.getInstance().getLogger().warning("§cException: §b" + exception);
         }
 
+    }
+
+    private static void loadLang() {
+        Config lang = Config.loadConfig(Moderation.getInstance(),"lang.yml", "Moderation/lang.yml");
+        lang.setComments("vanish", Arrays.asList("", "# Vanish command messages"));
+        lang.setComments("freeze", Arrays.asList("", "# Freeze command messages"));
+        lang.setComments("inventory", Arrays.asList("", "# Inventory command messages"));
+        lang.setComments("randomtp", Arrays.asList("", "# RandomTP messages"));
+        lang.setComments("slow-chat", Arrays.asList("", "# Slow-Chat messages"));
+        lang.save();
     }
 
     private static void loadConfig() {

@@ -15,7 +15,10 @@ public class MyString {
     public final char COLOR_CHAR = ChatColor.COLOR_CHAR;
     public MyString(String str) {
         this.str = str;
-        translateHexColorCodesString();
+        if(str != null){
+            translateHexColorCodesString();
+        }
+
     }
     public void setStr(String str) { this.str = str; }
 
@@ -63,6 +66,7 @@ public class MyString {
     public void translateHexColorCodesString() {
         try {
             final Pattern hexPattern = Pattern.compile("\\{" + "#([A-Fa-f0-9]{6})" + "\\}");
+            if(str == null){ Bukkit.getConsoleSender().sendMessage("Str null"); }
             Matcher matcher = hexPattern.matcher(str);
             StringBuffer buffer = new StringBuffer(str.length() + 4 * 8);
             while (matcher.find()){
@@ -75,7 +79,7 @@ public class MyString {
             }
             this.str = matcher.appendTail(buffer).toString();
         } catch (Exception exception){
-            Bukkit.broadcastMessage("Exception: " + exception);
+            Bukkit.getConsoleSender().sendMessage("Exception MyString.java: " + exception);
         }
     }
 
