@@ -1,0 +1,21 @@
+name: Moderation
+version: '1.0-SNAPSHOT'
+main: fr.faylis.moderation.Moderation
+api-version: 1.17
+prefix: Moderation
+authors: [ SYNATIKS ]
+description: Moderation plugin
+website: faylis.fr
+depend: [TheAPI]
+commands:
+  moderation:
+    description: Enable or disable moderation mode
+    aliases: [mod]
+  fvanish:
+    description: Enable or disable vanish
+    aliases: [fv, vanish, v]
+  inventory:
+    description: Open target inventory
+  freeze:
+    description: Freeze player
+

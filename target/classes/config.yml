@@ -1,0 +1,100 @@
+vanish: []
+moderators: []
+slow-chat:
+  minutes: 0
+  seconds: 0
+items:
+  disableVanish:
+    slot: 0
+    type: GRAY_DYE
+    displayname: "§7Disable vanish"
+    lore:
+      - ""
+      - "§e-> §bRight-click to use:"
+      - "§7Turn §coff §7vanish"
+  enableVanish:
+    slot: 0
+    type: LIME_DYE
+    displayname: "§7Enable vanish"
+    lore:
+      - ""
+      - "§e-> §bRight-click to use:"
+      - "§7Turn §aon §7vanish"
+  random-tp:
+    slot: 1
+    type: COMPASS
+    displayname: "§eRandom TP"
+    lore:
+      - ""
+      - "§e-> §bRight-click to use:"
+      - "§7Random teleport to online players"
+  moderation-menu:
+    slot: 4
+    type: BLACK_SHULKER_BOX
+    displayname: "§cModeration menu"
+    lore:
+      - ""
+      - "§e-> §bRight-click to use:"
+      - "§7Open moderation GUI"
+  players-inventory:
+    slot: 7
+    type: PLAYER_HEAD
+    displayname: "§dPlayer's inventory"
+    lore:
+      - ""
+      - "§e-> §bRight-click to use:"
+      - "§7Open target inventory"
+  freeze-player:
+    slot: 8
+    type: BLAZE_ROD
+    displayname: "§9Freeze player"
+    lore:
+      - ""
+      - "§e-> §bRight-click to use:"
+      - "§7Freeze target"
+moderation-menu:
+  time:
+    displayname: "§aTime"
+    lore:
+      - ""
+      - "§e-> §bChange time"
+      - "§7Click §e▲ §7Set day time"
+      - "§7Click §e▼ §7Set night time"
+  day-time:
+    displayname: "§aDay time"
+    lore:
+      - ""
+      - "§e-> §7Set daytime"
+  night-time:
+    displayname: "§aNight time"
+    lore:
+      - ""
+      - "§e-> §7Set nighttime"
+  slow-chat:
+    displayname: "§9Slow chat"
+    lore:
+      - ""
+      - "§e-> §bLeft/Right click to change slow chat"
+  vanish:
+    displayname: "§dVanish"
+    lore:
+      - ""
+      - "§e-> §bSet your vanish"
+      - "§7Click §e▲ §7Turn §aon §7vanish"
+      - "§7Click §e▼ §7Turn §coff §7vanish"
+  vanishOn:
+    displayname: "§dVanish §8[§aON§8]"
+    lore:
+      - ""
+      - "§e-> §7Turn §aon §7vanish"
+  vanishOff:
+    displayname: "§dVanish §8[§cOFF§8]"
+    lore:
+      - ""
+      - "§e-> §7Turn §coff §7vanish"
+  vanishAlreadyOn:
+    displayname: "§dVanish already §8[§aON§8]"
+    lore: []
+  vanishAlreadyOff:
+    displayname: "§dVanish already §8[§cOFF§8]"
+    lore: []

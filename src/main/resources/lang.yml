@@ -1,0 +1,60 @@
+prefix: "§cModeration §e»§7 "
+no-permissions: "§cYou do not have permissions to use that command"
+target-offline: "§7Player §c{target} §7is offline."
+
+# Moderation mode
+turnOn-moderation-mode: "Moderation mode §aON§7."
+turnOff-moderation-mode: "Moderation mode §cOFF§7."
+
+##########
+# Vanish #
+##########
+vanish:
+  # Command
+  command: "§7Usage: §e/vanish <target>"
+  # Vanish ON
+  turnOn:  "Vanish §aON§7."
+  turnOn-others: "Vanish §aON §7for §c{target}§7."
+  turnOn-by-others: "Vanish §aON §7by §c{player}§7."
+  # Vanish off
+  turnOff: "Vanish §cOFF§7."
+  turnOff-others: "Vanish §cOFF §7for §c{target}§7."
+  turnOff-by-others: "Vanish §cOFF §7by §c{player}§7."
+
+##########
+# Freeze #
+##########
+freeze:
+  command: "§7Usage: §e/vanish <target>"
+  on:
+    others: "§7You freeze §c{target}"
+    byothers: "§7You were freeze by §c{player}"
+  off:
+    others: "§7You unfreeze §c{target}"
+    byothers: "§7You were unfreeze by §c{player}"
+  disabled-command: "§7Cannot send command, join our discord : discord.gg/yourinvitelink"
+
+#############
+# Inventory #
+#############
+inventory:
+  command: "§7Usage: §e/inventory <target>"
+  open-target: "§7Opening §c{target} §7inventory."
+
+#############
+# Random TP #
+#############
+randomtp:
+  empty: "§7There's no one to teleport to."
+  teleport: "§7Teleported to §c{target}"
+#############
+# Slow Chat #
+#############
+slow-chat:
+  cancel: "§7You still need to wait §c{timer}"
+  timer: "§7Timer has been set to : §c{timer} §7by §c{player}"
+  format:
+    0m-0s: "0s"
+    0m: "{seconds}s"
+    0s: "{minutes}m"
+    default: "{minutes}m and {seconds}s"
